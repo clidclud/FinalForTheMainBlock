@@ -13,13 +13,15 @@ for (int i = 0; i < length; i++)
     Console.WriteLine("Заполните строку массива");
     array1 [i] = Console.ReadLine();
 }
+Console.WriteLine();
 
-Console.Write("Имеющийся массив:");
+Console.Write("Имеющийся массив: ");
 for (int i = 0; i < length; i++)
 {
-    Console.Write($"[{array1[i]}]");
+    Console.Write(array1[i] + " ");
 }
 Console.WriteLine();
+
 
 Console.Write("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
 string [] array2 = new string [array1.Length];
@@ -35,5 +37,5 @@ for (int i = 0; i < array1.Length; i++)
 }
 for (int i = 0; i < count; i++)
     {
-        Console.Write($"[{array2[i]}]");
+        Console.Write(array2[i] + " ");
     }
